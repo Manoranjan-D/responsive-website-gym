@@ -1,0 +1,62 @@
+.section-coaches {
+  grid-column: 1/-1;
+  background-color: var(--color-grey);
+}
+
+.coaches {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  gap: var(--grid-gap);
+
+  @media only screen and (max-width: 31.25em) {
+    grid-template-columns: minmax(min-content, 1fr);
+  }
+}
+
+.c-card {
+  background-color: var(--color-yellow);
+  filter: drop-shadow(2px 2px 4px black);
+  display: flex;
+  @media only screen and (max-width: 53.12em) {
+    flex-direction: column;
+  }
+
+  &__content {
+    background: linear-gradient(
+      to right,
+      var(--color-black-dark),
+      var(--color-black-light)
+    );
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+
+  &__img {
+    background-position: center;
+    background-size: cover;
+    max-width: 40%;
+
+    @media only screen and (max-width: 53.12em) {
+      max-width: 100%;
+    }
+  }
+}
+.c-namecard {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1rem;
+}
+
+.c-name {
+  font-size: 1.7rem;
+  color: #e5383b;
+  font-weight: 700;
+}
+
+.c-title {
+  text-transform: capitalize;
+}

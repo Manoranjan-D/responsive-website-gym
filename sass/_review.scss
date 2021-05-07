@@ -1,0 +1,53 @@
+.section-review {
+  grid-column: 1/-1;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../img/review.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.review {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  gap: var(--grid-gap);
+
+  @media only screen and(max-width:57.5em) {
+    grid-template-columns: repeat(1, minmax(min-content, 1fr));
+  }
+}
+
+.review-box {
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media only screen and(max-width:26.56em) {
+    flex-direction: column;
+  }
+
+  &__description {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    align-self: flex-end;
+    color: var(--color-red);
+    font-weight: 700;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+  }
+}

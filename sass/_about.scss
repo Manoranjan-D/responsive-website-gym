@@ -1,0 +1,29 @@
+.section-about {
+  grid-column: 1/-1;
+  background-color: var(--color-grey);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  align-items: center;
+  gap: var(--grid-gap);
+
+  @media only screen and (max-width: 50em) {
+    grid-template-columns: repeat(1, minmax(min-content, 1fr));
+  }
+
+  &__image {
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    filter: grayscale(1);
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    gap: 2rem;
+    justify-items: flex-start;
+  }
+}

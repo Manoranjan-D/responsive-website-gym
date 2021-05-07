@@ -1,0 +1,121 @@
+.header {
+  grid-column: 1/-1;
+  background-color: var(--color-yellow);
+  display: grid;
+  grid-template-columns: repeat(8, minmax(min-content, 1fr));
+
+  @media only screen and (max-width: 50em) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, minmax(min-content, 1fr));
+  }
+
+  &__text {
+    grid-column: 1/7;
+    grid-row: 1/2;
+
+    background: linear-gradient(
+      to right,
+      var(--color-black-dark),
+      var(--color-black-light)
+    );
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 50em) {
+      grid-row: 1/7;
+      grid-column: 1/-1;
+      clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+      background: linear-gradient(
+        to bottom,
+        var(--color-black-dark),
+        var(--color-black-light)
+      );
+    }
+  }
+
+  &__img {
+    grid-column: 6/-1;
+    grid-row: 1/2;
+    background-image: url('../img/hero-img.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(35% 0, 100% 0%, 100% 100%, 15% 100%);
+
+    @media only screen and (max-width: 50em) {
+      grid-row: 6/-1;
+      grid-column: 1/-1;
+      clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+      background-image: url('../img/hero-img-small.jpg');
+      background-position: top;
+    }
+  }
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.5rem;
+
+  @media only screen and (max-width: 37.5em) {
+    justify-content: space-between;
+  }
+}
+
+.nav {
+  list-style: none;
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.5rem;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0%;
+      height: 1.5px;
+      background-color: var(--color-yellow);
+      transition: width 0.3s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+.nav-flex {
+  display: flex;
+
+  @media only screen and (max-width: 37.5em) {
+    display: none;
+  }
+}
+
+.content {
+  margin: auto;
+  padding: 2.4rem;
+}
+
+.logo {
+  color: var(--color-red);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+}
+
+.mobile__nav {
+  display: none;
+  padding: 1.5rem;
+  color: #fff;
+  margin-right: 2rem;
+
+  @media only screen and (max-width: 37.5em) {
+    display: block;
+  }
+}

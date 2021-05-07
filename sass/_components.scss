@@ -1,0 +1,84 @@
+.form {
+  &__input {
+    padding: 1rem clamp(1rem, 3vw, 3rem);
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    background-color: var(--color-grey);
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 0.8rem clamp(1rem, 3vw, 3rem);
+  border-radius: 3px;
+  font-family: inherit;
+  font-weight: inherit;
+  border: none;
+  cursor: pointer;
+
+  &__link {
+    text-decoration: none;
+    text-transform: capitalize;
+
+    color: #000;
+    padding: 0.8rem clamp(1rem, 3vw, 3rem);
+    background-color: var(--color-yellow);
+    border-bottom: 3px solid transparent;
+    transition: border 0.3s;
+
+    &:hover,
+    :active {
+      border-bottom: 3px solid #000;
+    }
+  }
+
+  &__secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid var(--color-yellow);
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: var(--color-yellow);
+      color: #000;
+    }
+
+    &--black {
+      color: #000;
+      border: 1px solid #000;
+    }
+  }
+
+  &__primary {
+    background-color: var(--color-yellow);
+    color: #000;
+    border: 1px solid transparent;
+    transition: background-color 0.3s;
+
+    &:hover {
+      color: #000;
+      background-color: var(--color-yellow-dark);
+    }
+  }
+}
+
+.margin-right {
+  margin-right: 2rem;
+}
+
+.section-container {
+  margin: 8rem auto;
+  padding: 0 2.4rem;
+  max-width: clamp(50rem, 85vw, 130rem);
+}
+
+.grid-center {
+  grid-column: 1/-1;
+  text-align: center;
+}

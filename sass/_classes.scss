@@ -1,0 +1,47 @@
+.section-classes {
+  grid-column: 1/-1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/class.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.classes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  gap: var(--grid-gap);
+
+  @media only screen and (max-width: 43.75em) {
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    grid-template-columns: repeat(1, minmax(min-content, 1fr));
+  }
+}
+
+.class {
+  color: var(--color-red);
+  font-weight: 700;
+  text-align: center;
+  padding: 2.4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1.8rem, 2.5vw, 3rem);
+  background: linear-gradient(
+    120deg,
+    var(--color-black-dark) 65%,
+    rgba(0, 0, 0, 0.3) 50%
+  );
+
+  &:hover {
+    background: linear-gradient(
+      120deg,
+      var(--color-black-dark) 65%,
+      var(--color-yellow) 80%,
+      var(--color-yellow-dark)
+    );
+  }
+}

@@ -1,0 +1,41 @@
+:root {
+  --color-black-dark: #09080d;
+  --color-black-light: #3c3d42;
+  --color-grey: #edf0f2;
+
+  --color-yellow: #feec0c;
+  --color-yellow-dark: #b4a90d;
+
+  --color-red: #e5383b;
+
+  --grid-gap: clamp(1.6rem, 6vw, 8rem);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: unquote('max(95vh, 60rem)');
+  grid-template-columns: repeat(8, minmax(min-content, 1fr));
+  min-width: 26rem;
+  max-width: 200rem;
+  margin: 0 auto;
+}

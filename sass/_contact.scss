@@ -1,0 +1,39 @@
+.section-contact {
+  grid-column: 1/-1;
+  background-color: orange;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  align-items: center;
+  gap: var(--grid-gap);
+
+  @media only screen and (max-width: 50em) {
+    grid-template-columns: repeat(1, minmax(min-content, 1fr));
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  & > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  @media only screen and (max-width: 46.56em) {
+    grid-template-columns: repeat(1, minmax(min-content, 1fr));
+  }
+}
+
+.form-flex {
+  align-self: flex-start;
+}
+
+.contact-img {
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+}

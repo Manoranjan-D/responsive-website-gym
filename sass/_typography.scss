@@ -1,0 +1,46 @@
+.heading {
+  &__primary {
+    font-size: clamp(2rem, 4vw, 4rem);
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+
+    &--black {
+      color: #000;
+    }
+
+    &--main {
+      display: block;
+      font-size: 100%;
+      font-weight: 900;
+    }
+
+    &--sub {
+      display: block;
+      font-size: 53%;
+      font-weight: 700;
+    }
+  }
+
+  &__secondary {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: var(--color-yellow);
+    }
+
+    &--white {
+      color: #fff;
+    }
+  }
+}
+
+h3 {
+  color: #ba181b;
+}
