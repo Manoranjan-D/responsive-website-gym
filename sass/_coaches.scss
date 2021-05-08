@@ -1,5 +1,4 @@
 .section-coaches {
-  grid-column: 1/-1;
   background-color: var(--color-grey);
 }
 
@@ -40,6 +39,7 @@
     background-position: center;
     background-size: cover;
     max-width: 40%;
+    height: auto;
 
     @media only screen and (max-width: 53.12em) {
       max-width: 100%;

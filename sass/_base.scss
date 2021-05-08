@@ -33,8 +33,6 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: unquote('max(95vh, 60rem)');
-  grid-template-columns: repeat(8, minmax(min-content, 1fr));
   min-width: 26rem;
   max-width: 200rem;
   margin: 0 auto;

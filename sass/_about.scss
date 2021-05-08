@@ -1,5 +1,4 @@
 .section-about {
-  grid-column: 1/-1;
   background-color: var(--color-grey);
 }
 
@@ -17,6 +16,7 @@
     background-size: cover;
     background-position: center;
     max-width: 100%;
+    height: auto;
     filter: grayscale(1);
   }
 
@@ -25,5 +25,6 @@
     grid-template-rows: repeat(2, min-content);
     gap: 2rem;
     justify-items: flex-start;
+    max-height: 100%;
   }
 }

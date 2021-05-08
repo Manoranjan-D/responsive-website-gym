@@ -1,31 +1,33 @@
 .section-footer {
-  grid-column: 1/-1;
   background-color: #000;
 }
+
 .footer {
   display: grid;
   grid-template-columns: 30% auto;
   gap: var(--grid-gap);
   align-items: center;
+  justify-items: center;
   color: #fff;
 
-  @media only screen and (max-width: 52.6em) {
+  @media only screen and (max-width: 62.5em) {
     grid-template-columns: repeat(1, minmax(min-content, 1fr));
   }
 }
 
 .nav-foo {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(min-content, 1fr));
 
-  & > * {
-    flex: 1;
+  @media only screen and (max-width: 40.62em) {
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
   }
 }
 
 .legel {
   grid-column: 1/-1;
   text-align: center;
+
   display: flex;
   justify-content: center;
   align-items: center;

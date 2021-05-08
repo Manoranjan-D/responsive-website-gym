@@ -66,6 +66,15 @@
       background-color: var(--color-yellow-dark);
     }
   }
+
+  &--black {
+    background-color: #000;
+    color: #fff;
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
+  }
 }
 
 .margin-right {
