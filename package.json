@@ -8,7 +8,7 @@
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
     "parcel": "parcel build index.html -d dist",
     "build": "npm run prefix:css && npm run parcel",
-    "run": "parcel index.html"
+    "dev": "parcel index.html"
   },
   "author": "Manoranjan",
   "license": "ISC",

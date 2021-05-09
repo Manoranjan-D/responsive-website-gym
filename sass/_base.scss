@@ -22,6 +22,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -29,6 +30,12 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.5;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section {
+  scroll-snap-align: start;
 }
 
 .container {
