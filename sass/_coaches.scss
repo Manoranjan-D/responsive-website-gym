@@ -1,62 +1,76 @@
 .section-coaches {
-  background-color: var(--color-grey);
+  background-color: var(--color-black);
 }
 
-.coaches {
+.coaches-box {
   display: grid;
-  grid-template-columns: repeat(2, minmax(min-content, 1fr));
-  gap: var(--grid-gap);
-
-  @media only screen and (max-width: 31.25em) {
-    grid-template-columns: minmax(min-content, 1fr);
-  }
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(unquote('max(25rem, calc(100% / 4))'), 1fr)
+  );
+  column-gap: var(--grid-column-gap);
+  row-gap: var(--grid-row-gap);
 }
 
 .c-card {
-  background-color: var(--color-yellow);
-  filter: drop-shadow(2px 2px 4px black);
-  display: flex;
-  @media only screen and (max-width: 53.12em) {
-    flex-direction: column;
-  }
-
-  &__content {
-    background: linear-gradient(
-      to right,
-      var(--color-black-dark),
-      var(--color-black-light)
-    );
-    color: #fff;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding: 1.5rem;
-  }
+  position: relative;
 
   &__img {
     background-position: center;
     background-size: cover;
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
+    border-left: 2px solid var(--color-yellow);
+  }
 
-    @media only screen and (max-width: 53.12em) {
-      max-width: 100%;
+  & .overlay {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    color: #fff;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(43, 43, 43, 0.9);
+    transition: width 0.4s;
+
+    * {
+      padding-bottom: 1rem;
     }
   }
-}
-.c-namecard {
-  border-bottom: 1px solid #fff;
-  margin-bottom: 1rem;
-}
 
-.c-name {
-  font-size: 1.7rem;
-  color: #e5383b;
-  font-weight: 700;
-}
+  &__content {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(
+      to right,
+      var(--color-yellow),
+      var(--color-yellow-dark)
+    );
+    color: #000;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+    width: 60%;
+    padding: 0.5rem 1rem;
 
-.c-title {
-  text-transform: capitalize;
+    & .c-name {
+      color: #e5383b;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    & .c-title {
+      text-transform: capitalize;
+    }
+  }
+  &:hover .overlay {
+    width: 20%;
+  }
+
+  &:hover .c-card__img {
+    filter: brightness(0.8);
+  }
 }

@@ -5,290 +5,396 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="responsive fitness center website" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <!-- Google Font Lato -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Fitness Center</title>
+
+    <title>MFitness - place for your fitness goals</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" data-scroll-container>
       <!-- HEADER -->
-      <header class="header">
-        <div class="header__text">
+      <header class="header" id="home">
+        <div class="header-box section-container">
           <nav class="header-navigation" aria-label="navigation">
-            <div class="logo">Fitness Center</div>
-            <img src="img/list.svg" alt="mobile-nav" class="mobile__nav" />
+            <div class="logo"><span class="yellow">M</span>Fitness</div>
+            <img
+              src="img/nav-icon.svg"
+              alt="navigation icon"
+              class="nav-icon"
+            />
 
-            <ul class="nav nav-flex">
-              <a href="#" class="nav__link">
-                <li class="nav__item">Home</li>
-              </a>
-              <a href="#about" class="nav__link">
-                <li class="nav__item">About</li>
-              </a>
-              <a href="#classes" class="nav__link">
-                <li class="nav__item">Classes</li>
-              </a>
-              <a href="#trainers" class="nav__link">
-                <li class="nav__item">Trainers</li>
-              </a>
-              <a href="#contact" class="nav__link">
-                <li class="nav__item">Contact</li>
-              </a>
-              <a href="#" class="nav__link">
-                <li class="nav__item">Join us</li>
-              </a>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#courses">Courses</a>
+              </li>
+              <li>
+                <a href="#trainers">Trainers</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
           </nav>
-          <div class="content">
-            <div class="heading">
-              <h1 class="heading__primary">
-                <span class="heading__primary--main">IMPOSSIBLE</span>
-                <span class="heading__primary--main">IS JUST</span>
-                <span class="heading__primary--main">A WORD</span>
-                <span class="heading__primary--sub"
-                  >FITNESS CENTER - A PLACE FOR YOUR FITNESS GOAL
-                </span>
-              </h1>
-            </div>
 
-            <button class="btn btn__secondary margin-right">
-              Our Services
-            </button>
-            <button class="btn btn__primary">Join Us</button>
+          <div class="header-content">
+            <div class="heading">
+              <h1 class="heading__tertiary">
+                <span class="yellow">M</span>Fitness - place for your fitness
+                goals
+              </h1>
+              <div class="heading__primary margin-bottom">
+                impossible is just a word
+              </div>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn__primary margin-right">Join us</button>
+              <button class="btn btn__secondary">Our services</button>
+            </div>
           </div>
         </div>
-        <div class="header__img">img</div>
       </header>
 
       <!-- SECTION ABOUT -->
       <section class="section-about" id="about">
-        <div class="about section-container">
-          <div class="about__title grid-center">
-            <div class="heading heading__secondary">Fitness Center</div>
-          </div>
-
-          <img src="img/about.jpg" alt="about" class="about__image" />
-
-          <div class="about__content">
+        <div class="about-box section-container">
+          <div class="about-box__content" data-aos="fade-up">
+            <div class="heading margin-bottom">
+              <h1 class="heading__secondary">
+                About <span class="yellow">M</span>Fitness
+              </h1>
+            </div>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
               dolor perferendis repellat ipsam fugiat dolorum possimus, modi ut
               est saepe tempora earum. Consectetur blanditiis voluptatibus,
               molestias explicabo tempora quae facilis?
             </p>
-            <a href="#" class="btn btn__link">Learn More</a>
+            <a href="#" class="link-button">Read More &rarr;</a>
           </div>
+          <picture class="about-box__image" data-aos="fade-up">
+            <img src="img/about-img-1.jpg" alt="about-image-one" />
+            <img src="img/about-img-2.jpg" alt="about-image-twwo" />
+            <img src="img/about-img-3.jpg" alt="about-image-three" />
+          </picture>
         </div>
       </section>
 
-      <!-- SECTION CLASSES -->
-      <section class="section-classes" id="classes">
-        <div class="classes section-container">
-          <div class="classes__title grid-center">
-            <div class="heading heading__secondary heading__secondary--white">
-              Our Classes
-            </div>
+      <!-- SECTION COURSES -->
+      <section class="section-courses" id="courses">
+        <div class="courses-box section-container" data-aos="fade-up">
+          <div class="heading grid-center underline margin-bottom">
+            <h1 class="heading__secondary">Our Courses</h1>
           </div>
-          <div class="class">Heavy Weight</div>
-          <div class="class">Postuer Correction</div>
-          <div class="class">Body Building</div>
-          <div class="class">Weight Loss</div>
-          <div class="class">Cardio Fit</div>
-          <div class="class">Core Strength</div>
+
+          <div class="sub-heading">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              aspernatur quisquam dolores quos dignissimos voluptates.
+            </p>
+          </div>
+
+          <div class="class-card">
+            <img
+              class="class-card__img"
+              src="./img/courses-bodybuilding.jpg"
+              alt="body-building"
+            />
+
+            <div class="class-card__overlay">
+              <div class="text">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ratione culpa
+                </p>
+
+                <a href="#" class="link-button">Read More &rarr;</a>
+              </div>
+            </div>
+
+            <div class="class-card__title">Body Building</div>
+          </div>
+
+          <div class="class-card">
+            <img
+              class="class-card__img"
+              src="./img/courses-crossfit.jpg"
+              alt="cross-fit"
+            />
+            <div class="class-card__overlay">
+              <div class="text">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ratione culpa
+                </p>
+
+                <a href="#" class="link-button">Read More &rarr;</a>
+              </div>
+            </div>
+            <div class="class-card__title">Cross Fit</div>
+          </div>
+
+          <div class="class-card">
+            <img
+              class="class-card__img"
+              src="./img/courses-fitness.jpg"
+              alt="fitness"
+            />
+            <div class="class-card__overlay">
+              <div class="text">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ratione culpa
+                </p>
+
+                <a href="#" class="link-button">Read More &rarr;</a>
+              </div>
+            </div>
+            <div class="class-card__title">Fitness</div>
+          </div>
         </div>
       </section>
 
       <!-- SECTION OFFER -->
-      <section class="section-offer">
-        <div class="offer section-container">
-          <img src="img/offer.svg" alt="offer" class="offer__img" />
-          <div class="offer__content">
-            <div class="heading offer-text">
-              <h1 class="heading__primary">
-                <span class="heading__primary--main heading__primary--black">
-                  Special offer this summer get full Benefits for year with 20%
-                  discount.
-                </span>
+      <section class="section-offer" id="about">
+        <div class="offer-box">
+          <div class="offer" data-aos="fade-up">
+            <div class="heading margin-bottom">
+              <h1 class="heading__secondary">
+                Special offer this summer get full Benefits for year with 20%
+                discount.
               </h1>
             </div>
+            <button class="btn btn__primary">Become a member</button>
           </div>
+
+          <div class="offer-img"></div>
         </div>
       </section>
 
       <!-- SECTION COACHES -->
       <section class="section-coaches" id="trainers">
-        <div class="coaches section-container">
-          <div class="coaches__title grid-center">
-            <div class="heading heading__secondary heading__secondary">
-              OUR FITNESS COACHES
+        <div class="coaches-box section-container" data-aos="fade-up">
+          <div class="heading grid-center underline margin-bottom">
+            <div class="heading__secondary">OUR FITNESS COACHES</div>
+          </div>
+
+          <div class="sub-heading">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              aspernatur quisquam dolores quos dignissimos voluptates.
+            </p>
+          </div>
+
+          <div class="c-card">
+            <img src="img/coache-1.jpg" alt="coache-1" class="c-card__img" />
+
+            <div class="overlay">
+              <div class="social-icon">
+                <img src="./img/logo-whatsapp.svg" alt="whatsapp-icon" />
+              </div>
+              <div class="social-icon">
+                <img src="./img/logo-facebook.svg" alt="facebook-icon" />
+              </div>
+              <div class="social-icon">
+                <img src="./img/logo-instagram.svg" alt="instagram-icon" />
+              </div>
+              <div class="social-icon">
+                <img src="./img/logo-twitter.svg" alt="twitter-icon" />
+              </div>
+            </div>
+
+            <div class="c-card__content">
+              <p class="c-name">MARK BERTUL</p>
+              <p class="c-title">Body Building</p>
             </div>
           </div>
 
           <div class="c-card">
-            <div class="c-card__content">
-              <div class="c-namecard">
-                <div class="c-name">MERRY ANDERSON</div>
-                <div class="c-title">Male Fitness Coach</div>
-              </div>
+            <img src="img/coache-2.jpg" alt="coache-1" class="c-card__img" />
 
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="overlay">
+              <div class="social-icon">
+                <img src="./img/logo-whatsapp.svg" alt="whatsapp-icon" />
+              </div>
+              <div class="social-icon">
+                <img src="./img/logo-facebook.svg" alt="facebook-icon" />
+              </div>
+              <div class="social-icon">
+                <img src="./img/logo-instagram.svg" alt="instagram-icon" />
+              </div>
+              <div class="social-icon">
+                <img src="./img/logo-twitter.svg" alt="twitter-icon" />
+              </div>
             </div>
-            <img
-              src="img/coache-1-merry-andreson.jpg"
-              alt="coache-1"
-              class="c-card__img"
-            />
+
+            <div class="c-card__content">
+              <p class="c-name">CATHY PHAM</p>
+              <p class="c-title">Cardio Expert</p>
+            </div>
           </div>
 
           <div class="c-card">
-            <div class="c-card__content">
-              <div class="c-namecard">
-                <div class="c-name">Cathy Pham</div>
-                <div class="c-title">Female Fitness Coach</div>
+            <img src="img/coache-3.jpg" alt="coache-1" class="c-card__img" />
+
+            <div class="overlay">
+              <div class="social-icon">
+                <img src="./img/logo-whatsapp.svg" alt="whatsapp-icon" />
               </div>
-
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <img
-              src="img/coache-2-cathy-pham.jpg"
-              alt="coache-1"
-              class="c-card__img"
-            />
-          </div>
-
-          <div class="c-card">
-            <div class="c-card__content">
-              <div class="c-namecard">
-                <div class="c-name">Charles Gaudreault</div>
-                <div class="c-title">Male Fitness Coach</div>
+              <div class="social-icon">
+                <img src="./img/logo-facebook.svg" alt="facebook-icon" />
               </div>
-
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <img
-              src="img/coache-3-charles-gaudreault.jpg"
-              alt="coache-3"
-              class="c-card__img"
-            />
-          </div>
-
-          <div class="c-card">
-            <div class="c-card__content">
-              <div class="c-namecard">
-                <div class="c-name">Sergio Pedemonte</div>
-                <div class="c-title">Female Fitness Coach</div>
+              <div class="social-icon">
+                <img src="./img/logo-instagram.svg" alt="instagram-icon" />
               </div>
-
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="social-icon">
+                <img src="./img/logo-twitter.svg" alt="twitter-icon" />
+              </div>
             </div>
-            <img
-              src="img/coache-4-serio-pedemonte.jpg"
-              alt="coache-4"
-              class="c-card__img"
-            />
+
+            <div class="c-card__content">
+              <p class="c-name">SVEN MIEKE</p>
+              <p class="c-title">Fitness Coach</p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- SECTION REVIEW -->
       <section class="section-review" id="review">
-        <div class="review section-container">
-          <div class="review__title grid-center">
-            <div class="heading heading__secondary heading__secondary--white">
-              what people say
-            </div>
+        <div class="review-box section-container" data-aos="fade-up">
+          <div class="heading grid-center underline margin-bottom">
+            <h1 class="heading__secondary">what people say</h1>
           </div>
 
-          <div class="review-box">
+          <div class="review-card">
             <img
-              src="img/user-1-cesar-rincon.jpg"
+              src="img/review-img-1.jpg"
               alt="user"
-              class="review-box__image"
+              class="review-card__image"
             />
-            <div class="review-box__description">
-              <p class="review-box__content">
-                &quot;Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            <blockquote class="review-card__content">
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Sapiente possimus aperiam
               </p>
-              <div class="review-box__name">-Cesar Rincon</div>
-            </div>
+              <div class="name">Cesar Rincon</div>
+            </blockquote>
           </div>
 
-          <div class="review-box">
+          <div class="review-card">
             <img
-              src="img/user-2-jonathana-cosens.jpg"
+              src="img/review-img-2.jpg"
               alt="user"
-              class="review-box__image"
+              class="review-card__image"
             />
-            <div class="review-box__description">
-              <p class="review-box__content">
-                &quot;Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            <blockquote class="review-card__content">
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Sapiente possimus aperiam
               </p>
-              <div class="review-box__name">-Jonathana Cosens</div>
-            </div>
+              <div class="name">Mathilde Langevin</div>
+            </blockquote>
           </div>
         </div>
       </section>
 
       <!-- SECTION CONTACT -->
       <section class="section-contact" id="contact">
-        <div class="contact section-container">
-          <div class="form">
-            <div class="form__name heading heading__secondary">
-              Stay in Touch
+        <div class="contact-box">
+          <form class="form-grp" data-aos="fade-up">
+            <div class="heading margin-bottom">
+              <h1 class="heading__secondary">
+                Get in <span class="yellow">Touch</span>
+              </h1>
             </div>
-            <input type="text" class="form__input" placeholder="Name" />
-            <input type="text" class="form__input" placeholder="Email" />
-            <button class="btn btn--black btn__primary form-flex">
-              Submit
-            </button>
-          </div>
-          <img
-            src="img/stay-in-touch.svg"
-            alt="stay-in-touch"
-            class="contact-img"
-          />
+            <input type="text" class="form form__input" placeholder="Name" />
+            <input type="text" class="form form__input" placeholder="Email" />
+            <input type="text" class="form form__input" placeholder="Phone" />
+            <textarea
+              name="message"
+              cols="5"
+              rows="3"
+              class="form form__input"
+              placeholder="Message"
+            ></textarea>
+            <button class="btn btn__primary form-flex">Send &nbsp;</button>
+          </form>
+          <div id="mapid" data-aos="fade-up"></div>
         </div>
       </section>
 
       <!-- FOOTER -->
       <footer class="section-footer" id="footer">
-        <div class="footer section-container">
-          <div class="footer__address">
-            <div class="name">Fitness Center</div>
-            <div class="address">100 Nallin Street, New Youk</div>
-            <div class="email">FitnessCenter@domine.com</div>
-            <div class="tel">+00 000 000 00</div>
+        <div class="footer-box section-container">
+          <div class="contact-details">
+            <div class="heading margin-bottom">
+              <h1 class="heading__secondary">
+                <span class="yellow">M</span>Fitness
+              </h1>
+            </div>
+
+            <ul class="contact-data">
+              <li class="location">100 Nallin Street, New Youk</li>
+              <li class="phone">+00 000 000 00</li>
+              <li class="email">MFitness@domine.com</li>
+              <li class="social">
+                <div class="social-icon">
+                  <img src="./img/logo-whatsapp.svg" alt="whatsapp-icon" />
+                </div>
+                <div class="social-icon">
+                  <img src="./img/logo-facebook.svg" alt="facebook-icon" />
+                </div>
+                <div class="social-icon">
+                  <img src="./img/logo-instagram.svg" alt="instagram-icon" />
+                </div>
+                <div class="social-icon">
+                  <img src="./img/logo-twitter.svg" alt="twitter-icon" />
+                </div>
+              </li>
+            </ul>
           </div>
+
           <nav class="footer-nav" aria-label="navigation">
-            <ul class="nav nav-foo">
-              <a href="#" class="nav__link">
-                <li class="nav__item">Home</li>
-              </a>
-              <a href="" class="nav__link">
-                <li class="nav__item">About</li>
-              </a>
-              <a href="" class="nav__link">
-                <li class="nav__item">Classes</li>
-              </a>
-              <a href="" class="nav__link">
-                <li class="nav__item">Trainers</li>
-              </a>
-              <a href="" class="nav__link">
-                <li class="nav__item">Contact</li>
-              </a>
-              <a href="" class="nav__link">
-                <li class="nav__item">Join us</li>
-              </a>
+            <div class="nav-name">Quick Links</div>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#courses">Courses</a></li>
+              <li><a href="#trainers">Trainers</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
+
+          <div class="newsletter">
+            <div class="newsletter__title">News Letter</div>
+            <div class="newsletter__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium, nisi!
+            </div>
+            <form class="newsletter__input">
+              <input
+                type="text"
+                class="form"
+                placeholder="example@domine.com"
+              />
+              <img src="./img/send.svg" alt="send icon" class="send-icon" />
+            </form>
+          </div>
+
           <div class="legel">
-            <p>Copyright &copy; by Manoranjan&nbsp;</p>
+            <p class="text">Copyright &copy; by Manoranjan&nbsp;</p>
             <a
               href="https://github.com/Manoranjan-D/responsive-website-gym"
               target="_blank"
@@ -299,5 +405,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>

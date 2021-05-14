@@ -1,0 +1,25 @@
+.grid-center {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.margin-right {
+  margin-right: 2rem;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
+
+.yellow {
+  color: var(--color-yellow);
+}
+
+.underline::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 2px;
+  margin: auto;
+  background-color: var(--color-yellow);
+}

@@ -1,11 +1,11 @@
-## Fitness Center - Responsive Gym Website
+## MFitness - Responsive Gym Website
 
-![](img/device-mockup.png)
+![](img/landing-page.png)
+
+### About Project
+
+MFitness reponsive webite build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations.
 
 ### Live Demo
 
-[demo](https://responsive-gym-website.netlify.app/)
-
-##
-
-![](img/full-screenshot.png)
+https://mfitness.netlify.app/

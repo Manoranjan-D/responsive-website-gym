@@ -1,46 +1,69 @@
-.section-classes {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../img/class.png');
-  background-size: cover;
-  background-position: center;
+.section-courses {
+  background-color: var(--color-black);
 }
 
-.classes {
+.courses-box {
   display: grid;
-  grid-template-columns: repeat(3, minmax(min-content, 1fr));
-  gap: var(--grid-gap);
-
-  @media only screen and (max-width: 43.75em) {
-    grid-template-columns: repeat(2, minmax(min-content, 1fr));
-  }
-
-  @media only screen and (max-width: 31.25em) {
-    grid-template-columns: repeat(1, minmax(min-content, 1fr));
-  }
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(unquote('max(25rem, calc(100% / 4))'), 1fr)
+  );
+  column-gap: var(--grid-column-gap);
+  row-gap: var(--grid-row-gap);
 }
 
-.class {
-  color: var(--color-red);
-  font-weight: 700;
-  text-align: center;
-  padding: 2.4rem;
+.class-card {
+  position: relative;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: clamp(1.8rem, 2.5vw, 3rem);
-  background: linear-gradient(
-    120deg,
-    var(--color-black-dark) 65%,
-    rgba(0, 0, 0, 0.3) 50%
-  );
+  &__img {
+    border-left: 2px solid var(--color-yellow);
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+  }
 
-  &:hover {
+  &__overlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 0%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: height 0.5s;
+
+    & .text {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 2.5rem;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    padding: 1rem 1rem;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
     background: linear-gradient(
-      120deg,
-      var(--color-black-dark) 65%,
-      var(--color-yellow) 80%,
+      to right,
+      var(--color-yellow),
       var(--color-yellow-dark)
     );
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #000;
+    height: 5.5rem;
+  }
+
+  &:hover &__overlay {
+    height: 99%;
   }
 }

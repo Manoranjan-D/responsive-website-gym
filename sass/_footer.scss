@@ -1,44 +1,100 @@
 .section-footer {
-  background-color: #000;
+  background-color: var(--color-black-light);
 }
 
-.footer {
+.footer-box {
   display: grid;
-  grid-template-columns: 30% auto;
-  gap: var(--grid-gap);
-  align-items: center;
-  justify-items: center;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(unquote('max(25rem, calc(100% / 4))'), 1fr)
+  );
+  column-gap: var(--grid-column-gap);
+  row-gap: var(--grid-row-gap);
   color: #fff;
+}
 
-  @media only screen and (max-width: 62.5em) {
-    grid-template-columns: repeat(1, minmax(min-content, 1fr));
+.contact-details {
+  & .contact-data {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    * {
+      padding: 0.4rem 0;
+    }
+
+    & .social {
+      display: flex;
+
+      * {
+        padding-right: 1rem;
+      }
+    }
   }
 }
 
-.nav-foo {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(min-content, 1fr));
-
-  @media only screen and (max-width: 40.62em) {
-    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+.footer-nav {
+  & .nav-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
   }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & ul li {
+    list-style: none;
+    padding: 1.5rem 0;
+  }
+
+  & ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  & ul li a::before {
+    content: '\2192';
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: -4px;
+    color: var(--color-yellow);
+  }
+}
+
+.newsletter {
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    margin-bottom: 1.6rem;
+  }
+
+  &__input {
+    position: relative;
+  }
+}
+
+.send-icon {
+  padding: 0.9rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #000;
+  cursor: pointer;
 }
 
 .legel {
+  border-top: 2px solid #fff;
+  padding: 1.5rem 0;
   grid-column: 1/-1;
   text-align: center;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-self: center;
-}
-.name {
-  color: var(--color-red);
-  font-weight: 700;
-}
-
-.github {
-  max-width: 100%;
-  height: auto;
+  & .text {
+    padding: 1rem 0;
+  }
 }

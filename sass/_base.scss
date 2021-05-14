@@ -1,14 +1,51 @@
 :root {
-  --color-black-dark: #09080d;
-  --color-black-light: #3c3d42;
-  --color-grey: #edf0f2;
+  //PRIMARY COLOR YELLOW
+  // --h: 56;
+  // --s: 99%;
+  // --l: 52%;
+  // --primary-color: #feee0b;
+  // --primary-color-dark: #a29801;
+  // --primary-color-light: hsl(56, 99%, 82%);
 
-  --color-yellow: #feec0c;
-  --color-yellow-dark: #b4a90d;
+  --color-yellow: #feee0b;
+  --color-yellow-dark: #a29801;
+  --color-yellow-light: hsl(56, 99%, 82%);
 
+  // --primary-color: hsl(var(--h), var(--s), var(--l));
+  // --primary-color-light: hsl(
+  //   var(--h),
+  //   var(--s),
+  //   calc(var(--l) + var(--lighten))
+  // );
+  // --primary-color-dark: hsl(var(--h), var(--s), calc(var(--l) + var(--darken)));
+
+  // --lighten: 30%;
+  // --darken: -20%;
+
+  //BACKGROUND BLACK COLOR
+  --color-black: #151515;
+  --color-black-light: #2b2b2b;
+
+  //RED COLOR
   --color-red: #e5383b;
 
-  --grid-gap: clamp(1.6rem, 6vw, 8rem);
+  //GRID GAP
+  --grid-column-gap: clamp(2rem, 6vw, 8rem);
+  --grid-row-gap: 5rem;
+
+  //NAVIGATION
+  --display-nav: flex;
+  --display-mob-nav: none;
+  @media only screen and (max-width: 43.75em) {
+    --display-nav: none;
+    --display-mob-nav: block;
+  }
+
+  //GRID
+  --section-col-2: 2;
+  @media only screen and (max-width: 900px) {
+    --section-col-2: 1;
+  }
 }
 
 *,
@@ -29,13 +66,9 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 1.5;
-  scroll-snap-type: y mandatory;
+  line-height: 1.6;
+  color: #fff;
   overflow-y: scroll;
-}
-
-section {
-  scroll-snap-align: start;
 }
 
 .container {
@@ -43,4 +76,10 @@ section {
   min-width: 26rem;
   max-width: 200rem;
   margin: 0 auto;
+}
+
+.section-container {
+  margin: 8rem auto;
+  padding: 0 2.4rem;
+  max-width: clamp(50rem, 85vw, 130rem);
 }

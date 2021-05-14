@@ -1,40 +1,22 @@
-.form {
-  &__input {
-    padding: 1rem clamp(1rem, 3vw, 3rem);
-    border-radius: 3px;
-    font-family: inherit;
-    font-size: inherit;
-    border: none;
-    background-color: var(--color-grey);
-
-    &:focus {
-      outline: none;
-    }
-  }
-}
-
 .btn {
   text-transform: uppercase;
-  padding: 0.8rem clamp(1rem, 3vw, 3rem);
+  padding: 1rem clamp(1.2rem, 3vw, 3rem);
   border-radius: 3px;
   font-family: inherit;
-  font-weight: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
   border: none;
   cursor: pointer;
 
-  &__link {
-    text-decoration: none;
-    text-transform: capitalize;
-
-    color: #000;
-    padding: 0.8rem clamp(1rem, 3vw, 3rem);
+  &__primary {
     background-color: var(--color-yellow);
-    border-bottom: 3px solid transparent;
-    transition: border 0.3s;
+    color: #000;
+    border: 1px solid transparent;
+    transition: background-color 0.3s;
 
-    &:hover,
-    :active {
-      border-bottom: 3px solid #000;
+    &:hover {
+      background-color: var(--color-yellow-dark);
     }
   }
 
@@ -45,49 +27,44 @@
     transition: all 0.3s;
 
     &:hover {
-      background-color: var(--color-yellow);
+      background-color: var(--color-yellow-light);
+      border: 1px solid var(--color-yellow-light);
       color: #000;
-    }
-
-    &--black {
-      color: #000;
-      border: 1px solid #000;
     }
   }
+}
 
-  &__primary {
-    background-color: var(--color-yellow);
-    color: #000;
-    border: 1px solid transparent;
-    transition: background-color 0.3s;
+.link-button {
+  text-decoration: none;
+  padding: 0.4rem 0;
+  color: #fff;
+  border-bottom: 2px solid var(--color-yellow);
 
-    &:hover {
-      color: #000;
-      background-color: var(--color-yellow-dark);
-    }
+  &:hover {
+    font-style: italic;
+  }
+}
+
+.form {
+  padding: 1rem clamp(1rem, 3vw, 3rem);
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  width: 100%;
+
+  &:focus {
+    outline: none;
   }
 
-  &--black {
-    background-color: #000;
+  &__input {
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
     color: #fff;
-    &:hover {
-      color: #fff;
-      background-color: #000;
+    resize: none;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
     }
   }
-}
-
-.margin-right {
-  margin-right: 2rem;
-}
-
-.section-container {
-  margin: 8rem auto;
-  padding: 0 2.4rem;
-  max-width: clamp(50rem, 85vw, 130rem);
-}
-
-.grid-center {
-  grid-column: 1/-1;
-  text-align: center;
 }
