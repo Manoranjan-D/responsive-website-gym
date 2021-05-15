@@ -1,7 +1,3 @@
-.section-review {
-  background-color: var(--color-black-light);
-}
-
 .review-box {
   display: grid;
   grid-template-columns: repeat(var(--section-col-2), minmax(min-content, 1fr));

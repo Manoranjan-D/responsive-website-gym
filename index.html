@@ -16,6 +16,7 @@
       <div class="header-box container">
         <nav class="header-navigation" aria-label="navigation">
           <div class="logo"><span class="yellow">M</span>Fitness</div>
+
           <img
             src="img/nav-icon.svg"
             alt="navigation icon"
@@ -45,11 +46,12 @@
 
         <article class="header-content">
           <div class="heading margin-bottom">
-            <h1>
-              <span class="yellow">M</span>Fitness - A place for your fitness
-              goals
-            </h1>
-            <h2>impossible is just a word</h2>
+            <h1><span class="yellow">M</span>Fitness</h1>
+            <h2 class="margin-bottom">A place for your fitness goals</h2>
+            <p class="description">
+              We Offer Functional Training, Plyometric Boxes, Aerobics classes,
+              TRX And Much More.
+            </p>
           </div>
           <div class="btn-group">
             <button class="btn btn__primary margin-right">Join us</button>
@@ -63,7 +65,7 @@
       <!-- SECTION ABOUT -->
       <section class="section-about" id="about">
         <div class="about-box container">
-          <article class="about-box__content" data-aos="fade-up">
+          <div class="about-box__content" data-aos="fade-up">
             <h2 class="margin-bottom">
               About <span class="yellow">M</span>Fitness
             </h2>
@@ -74,7 +76,7 @@
               molestias explicabo tempora quae facilis?
             </p>
             <a href="#" class="link-button">Read More &rarr;</a>
-          </article>
+          </div>
           <figure class="about-box__image" data-aos="fade-up">
             <img
               src="img/about-img-1.jpg"
@@ -100,84 +102,107 @@
 
       <!-- SECTION COURSES -->
       <section class="section-courses" id="courses">
-        <div class="courses-box container" data-aos="fade-up">
-          <h2 class="grid-center underline">Our Courses</h2>
-          <h3 class="grid-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            aspernatur quisquam dolores quos dignissimos voluptates.
-          </h3>
+        <div class="container" data-aos="fade-up">
+          <header class="courses-heading">
+            <h2 class="underline">Our Courses</h2>
+          </header>
 
-          <div class="class-card">
-            <img
-              class="class-card__img"
-              src="./img/courses-bodybuilding.jpg"
-              alt="body building course"
-              width="550"
-              height="550"
-            />
+          <article class="courses-content">
+            <div class="class-card">
+              <img
+                class="class-card__img"
+                src="./img/courses-bodybuilding.jpg"
+                alt="body building course"
+                width="550"
+                height="550"
+              />
 
-            <div class="class-card__overlay">
-              <div class="text">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Ratione culpa
-                </p>
+              <div class="class-card__overlay">
+                <div class="text">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ratione culpa
+                  </p>
 
-                <a href="#" class="link-button">Read More &rarr;</a>
+                  <a href="#" class="link-button">Read More &rarr;</a>
+                </div>
               </div>
+
+              <div class="class-card__title">Body Building</div>
             </div>
 
-            <div class="class-card__title">Body Building</div>
-          </div>
+            <div class="class-card">
+              <img
+                class="class-card__img"
+                src="./img/courses-crossfit.jpg"
+                alt="cross fit course"
+                width="550"
+                height="550"
+              />
+              <div class="class-card__overlay">
+                <div class="text">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ratione culpa
+                  </p>
 
-          <div class="class-card">
-            <img
-              class="class-card__img"
-              src="./img/courses-crossfit.jpg"
-              alt="cross fit course"
-              width="550"
-              height="550"
-            />
-            <div class="class-card__overlay">
-              <div class="text">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Ratione culpa
-                </p>
-
-                <a href="#" class="link-button">Read More &rarr;</a>
+                  <a href="#" class="link-button">Read More &rarr;</a>
+                </div>
               </div>
+              <div class="class-card__title">Cross Fit</div>
             </div>
-            <div class="class-card__title">Cross Fit</div>
-          </div>
 
-          <div class="class-card">
-            <img
-              class="class-card__img"
-              src="./img/courses-fitness.jpg"
-              alt="fitness course"
-              width="550"
-              height="550"
-            />
-            <div class="class-card__overlay">
-              <div class="text">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Ratione culpa
-                </p>
+            <div class="class-card">
+              <img
+                class="class-card__img"
+                src="./img/courses-gymnastic.jpg"
+                alt="gymnastic course"
+                width="550"
+                height="550"
+              />
 
-                <a href="#" class="link-button">Read More &rarr;</a>
+              <div class="class-card__overlay">
+                <div class="text">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ratione culpa
+                  </p>
+
+                  <a href="#" class="link-button">Read More &rarr;</a>
+                </div>
               </div>
+
+              <div class="class-card__title">Gymnastic</div>
             </div>
-            <div class="class-card__title">Fitness</div>
-          </div>
+
+            <div class="class-card">
+              <img
+                class="class-card__img"
+                src="./img/courses-fitness.jpg"
+                alt="fitness course"
+                width="550"
+                height="550"
+              />
+              <div class="class-card__overlay">
+                <div class="text">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ratione culpa
+                  </p>
+
+                  <a href="#" class="link-button">Read More &rarr;</a>
+                </div>
+              </div>
+              <div class="class-card__title">Fitness</div>
+            </div>
+          </article>
         </div>
       </section>
 
       <!-- SECTION OFFER -->
       <section class="section-offer" id="offer">
         <div class="offer-box">
-          <article class="offer" data-aos="fade-up">
+          <div class="offer" data-aos="fade-up">
             <h2 class="margin-bottom">
               Special offer this summer get full Benefits for year with 20%
               discount.
@@ -187,7 +212,7 @@
               Consectetur exercitationem amet quas repellendus esse natus.
             </p>
             <button class="btn btn__primary">Become a member</button>
-          </article>
+          </div>
 
           <div class="offer-img"></div>
         </div>
@@ -195,164 +220,212 @@
 
       <!-- SECTION COACHES -->
       <section class="section-coaches" id="trainers">
-        <div class="coaches-box container" data-aos="fade-up">
-          <h2 class="underline margin-bottom grid-center">
-            OUR FITNESS COACHES
-          </h2>
-          <h3 class="grid-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            aspernatur quisquam dolores quos dignissimos voluptates.
-          </h3>
+        <div class="container" data-aos="fade-up">
+          <header class="coache-heading">
+            <h2 class="underline">OUR FITNESS COACHES</h2>
+          </header>
 
-          <div class="c-card">
-            <img
-              src="img/coache-1.jpg"
-              alt="coache one"
-              class="c-card__img"
-              width="550"
-              height="550"
-            />
+          <article class="coache-content">
+            <div class="c-card">
+              <img
+                src="img/coache-1.jpg"
+                alt="coache one"
+                class="c-card__img"
+                width="550"
+                height="550"
+              />
 
-            <div class="overlay">
-              <div class="social-icon">
-                <img
-                  src="./img/logo-whatsapp.svg"
-                  alt="whatsapp-icon"
-                  width="35"
-                  height="35"
-                />
+              <div class="overlay">
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-whatsapp.svg"
+                    alt="whatsapp-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-facebook.svg"
+                    alt="facebook-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-instagram.svg"
+                    alt="instagram-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-twitter.svg"
+                    alt="twitter-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
               </div>
-              <div class="social-icon">
-                <img
-                  src="./img/logo-facebook.svg"
-                  alt="facebook-icon"
-                  width="35"
-                  height="35"
-                />
-              </div>
-              <div class="social-icon">
-                <img
-                  src="./img/logo-instagram.svg"
-                  alt="instagram-icon"
-                  width="35"
-                  height="35"
-                />
-              </div>
-              <div class="social-icon">
-                <img
-                  src="./img/logo-twitter.svg"
-                  alt="twitter-icon"
-                  width="35"
-                  height="35"
-                />
+
+              <div class="c-card__content">
+                <p class="c-name">MARK BERTUL</p>
+                <p class="c-title">Body Building</p>
               </div>
             </div>
 
-            <div class="c-card__content">
-              <p class="c-name">MARK BERTUL</p>
-              <p class="c-title">Body Building</p>
-            </div>
-          </div>
+            <div class="c-card">
+              <img
+                src="img/coache-2.jpg"
+                alt="coache two"
+                class="c-card__img"
+                width="550"
+                height="550"
+              />
 
-          <div class="c-card">
-            <img
-              src="img/coache-2.jpg"
-              alt="coache two"
-              class="c-card__img"
-              width="550"
-              height="550"
-            />
+              <div class="overlay">
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-whatsapp.svg"
+                    alt="whatsapp-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-facebook.svg"
+                    alt="facebook-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-instagram.svg"
+                    alt="instagram-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-twitter.svg"
+                    alt="twitter-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+              </div>
 
-            <div class="overlay">
-              <div class="social-icon">
-                <img
-                  src="./img/logo-whatsapp.svg"
-                  alt="whatsapp-icon"
-                  width="35"
-                  height="35"
-                />
-              </div>
-              <div class="social-icon">
-                <img
-                  src="./img/logo-facebook.svg"
-                  alt="facebook-icon"
-                  width="35"
-                  height="35"
-                />
-              </div>
-              <div class="social-icon">
-                <img
-                  src="./img/logo-instagram.svg"
-                  alt="instagram-icon"
-                  width="35"
-                  height="35"
-                />
-              </div>
-              <div class="social-icon">
-                <img
-                  src="./img/logo-twitter.svg"
-                  alt="twitter-icon"
-                  width="35"
-                  height="35"
-                />
-              </div>
-            </div>
-
-            <div class="c-card__content">
-              <p class="c-name">CATHY PHAM</p>
-              <p class="c-title">Cardio Expert</p>
-            </div>
-          </div>
-
-          <div class="c-card">
-            <img
-              src="img/coache-3.jpg"
-              alt="coache three"
-              class="c-card__img"
-              width="550"
-              height="550"
-            />
-
-            <div class="overlay">
-              <div class="social-icon">
-                <img
-                  src="./img/logo-whatsapp.svg"
-                  alt="whatsapp-icon"
-                  width="35"
-                  height="35"
-                />
-              </div>
-              <div class="social-icon">
-                <img
-                  src="./img/logo-facebook.svg"
-                  alt="facebook-icon"
-                  width="35"
-                  height="35"
-                />
-              </div>
-              <div class="social-icon">
-                <img
-                  src="./img/logo-instagram.svg"
-                  alt="instagram-icon"
-                  width="35"
-                  height="35"
-                />
-              </div>
-              <div class="social-icon">
-                <img
-                  src="./img/logo-twitter.svg"
-                  alt="twitter-icon"
-                  width="35"
-                  height="35"
-                />
+              <div class="c-card__content">
+                <p class="c-name">CATHY PHAM</p>
+                <p class="c-title">Cardio Expert</p>
               </div>
             </div>
 
-            <div class="c-card__content">
-              <p class="c-name">SVEN MIEKE</p>
-              <p class="c-title">Fitness Coach</p>
+            <div class="c-card">
+              <img
+                src="img/coache-4.jpg"
+                alt="coache one"
+                class="c-card__img"
+                width="550"
+                height="550"
+              />
+
+              <div class="overlay">
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-whatsapp.svg"
+                    alt="whatsapp-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-facebook.svg"
+                    alt="facebook-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-instagram.svg"
+                    alt="instagram-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-twitter.svg"
+                    alt="twitter-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+              </div>
+
+              <div class="c-card__content">
+                <p class="c-name">serio mike</p>
+                <p class="c-title">Fitness Coach</p>
+              </div>
             </div>
-          </div>
+
+            <div class="c-card">
+              <img
+                src="img/coache-3.jpg"
+                alt="coache three"
+                class="c-card__img"
+                width="550"
+                height="550"
+              />
+
+              <div class="overlay">
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-whatsapp.svg"
+                    alt="whatsapp-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-facebook.svg"
+                    alt="facebook-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-instagram.svg"
+                    alt="instagram-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+                <div class="social-icon">
+                  <img
+                    src="./img/logo-twitter.svg"
+                    alt="twitter-icon"
+                    width="35"
+                    height="35"
+                  />
+                </div>
+              </div>
+
+              <div class="c-card__content">
+                <p class="c-name">SVEN MIEKE</p>
+                <p class="c-title">Fitness Coach</p>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -488,8 +561,8 @@
               src="./img/send.svg"
               alt="send icon"
               class="send-icon"
-              width="35"
-              height="35"
+              width="36"
+              height="36"
             />
           </form>
         </div>

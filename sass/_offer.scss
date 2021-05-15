@@ -1,7 +1,3 @@
-.section-offer {
-  background-color: var(--color-black-light);
-}
-
 .offer-box {
   display: grid;
   grid-template-columns: repeat(var(--section-col-2), minmax(min-content, 1fr));

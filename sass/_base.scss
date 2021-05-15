@@ -26,7 +26,6 @@
 
   //GRID
   --section-col-2: 2;
-
   @media only screen and (max-width: 900px) {
     --section-col-2: 1;
   }
@@ -56,7 +55,15 @@ body {
 }
 
 .container {
-  max-width: clamp(50rem, 85vw, 120rem);
+  max-width: clamp(50rem, 85vw, 114rem);
   padding: clamp(4rem, 10vw, 12rem) 2.4rem;
   margin: 0 auto;
+}
+
+section:nth-child(odd) {
+  background-color: var(--color-black-light);
+}
+
+section:nth-child(even) {
+  background-color: var(--color-black);
 }

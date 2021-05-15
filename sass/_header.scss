@@ -19,6 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.7rem;
 
   padding: 2rem 0;
   background: linear-gradient(
@@ -52,14 +53,16 @@
 .logo {
   font-size: 2.5rem;
   font-weight: 700;
+  align-self: flex-start;
 }
 
 .nav-icon {
   display: var(--display-mob-nav);
+  align-self: flex-end;
 
   overflow: hidden;
-  border: 2px solid #fff;
-  padding: 0.2rem;
+  border: 1px solid #fff;
+  padding: 0.1rem;
 }
 
 .header-content {
@@ -71,4 +74,9 @@
   padding: 2rem 0rem;
   margin: auto 0;
   transform: translateY(-20%);
+
+  & .description {
+    font-size: 1.8rem;
+    line-break: strict;
+  }
 }
