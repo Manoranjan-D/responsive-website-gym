@@ -1,80 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="responsive fitness center website" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <!-- Google Font Lato -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-
     <title>MFitness - place for your fitness goals</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
   </head>
   <body>
-    <div class="container" data-scroll-container>
-      <!-- HEADER -->
-      <header class="header" id="home">
-        <div class="header-box section-container">
-          <nav class="header-navigation" aria-label="navigation">
-            <div class="logo"><span class="yellow">M</span>Fitness</div>
-            <img
-              src="img/nav-icon.svg"
-              alt="navigation icon"
-              class="nav-icon"
-            />
+    <!-- HEADER -->
+    <header class="header" id="home">
+      <div class="header-box container">
+        <nav class="header-navigation" aria-label="navigation">
+          <div class="logo"><span class="yellow">M</span>Fitness</div>
+          <img
+            src="img/nav-icon.svg"
+            alt="navigation icon"
+            class="nav-icon"
+            width="35"
+            height="35"
+          />
 
-            <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#courses">Courses</a>
-              </li>
-              <li>
-                <a href="#trainers">Trainers</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#courses">Courses</a>
+            </li>
+            <li>
+              <a href="#trainers">Trainers</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-          <div class="header-content">
-            <div class="heading">
-              <h1 class="heading__tertiary">
-                <span class="yellow">M</span>Fitness - place for your fitness
-                goals
-              </h1>
-              <div class="heading__primary margin-bottom">
-                impossible is just a word
-              </div>
-            </div>
-            <div class="btn-group">
-              <button class="btn btn__primary margin-right">Join us</button>
-              <button class="btn btn__secondary">Our services</button>
-            </div>
+        <article class="header-content">
+          <div class="heading margin-bottom">
+            <h1>
+              <span class="yellow">M</span>Fitness - A place for your fitness
+              goals
+            </h1>
+            <h2>impossible is just a word</h2>
           </div>
-        </div>
-      </header>
+          <div class="btn-group">
+            <button class="btn btn__primary margin-right">Join us</button>
+            <button class="btn btn__secondary">Our services</button>
+          </div>
+        </article>
+      </div>
+    </header>
 
+    <main>
       <!-- SECTION ABOUT -->
       <section class="section-about" id="about">
-        <div class="about-box section-container">
-          <div class="about-box__content" data-aos="fade-up">
-            <div class="heading margin-bottom">
-              <h1 class="heading__secondary">
-                About <span class="yellow">M</span>Fitness
-              </h1>
-            </div>
+        <div class="about-box container">
+          <article class="about-box__content" data-aos="fade-up">
+            <h2 class="margin-bottom">
+              About <span class="yellow">M</span>Fitness
+            </h2>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
               dolor perferendis repellat ipsam fugiat dolorum possimus, modi ut
@@ -82,34 +74,46 @@
               molestias explicabo tempora quae facilis?
             </p>
             <a href="#" class="link-button">Read More &rarr;</a>
-          </div>
-          <picture class="about-box__image" data-aos="fade-up">
-            <img src="img/about-img-1.jpg" alt="about-image-one" />
-            <img src="img/about-img-2.jpg" alt="about-image-twwo" />
-            <img src="img/about-img-3.jpg" alt="about-image-three" />
-          </picture>
+          </article>
+          <figure class="about-box__image" data-aos="fade-up">
+            <img
+              src="img/about-img-1.jpg"
+              alt="about-image-one"
+              width="350"
+              height="233"
+            />
+            <img
+              src="img/about-img-2.jpg"
+              alt="about-image-twwo"
+              width="350"
+              height="233"
+            />
+            <img
+              src="img/about-img-3.jpg"
+              alt="about-image-three"
+              width="420"
+              height="280"
+            />
+          </figure>
         </div>
       </section>
 
       <!-- SECTION COURSES -->
       <section class="section-courses" id="courses">
-        <div class="courses-box section-container" data-aos="fade-up">
-          <div class="heading grid-center underline margin-bottom">
-            <h1 class="heading__secondary">Our Courses</h1>
-          </div>
-
-          <div class="sub-heading">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              aspernatur quisquam dolores quos dignissimos voluptates.
-            </p>
-          </div>
+        <div class="courses-box container" data-aos="fade-up">
+          <h2 class="grid-center underline">Our Courses</h2>
+          <h3 class="grid-center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            aspernatur quisquam dolores quos dignissimos voluptates.
+          </h3>
 
           <div class="class-card">
             <img
               class="class-card__img"
               src="./img/courses-bodybuilding.jpg"
-              alt="body-building"
+              alt="body building course"
+              width="550"
+              height="550"
             />
 
             <div class="class-card__overlay">
@@ -130,7 +134,9 @@
             <img
               class="class-card__img"
               src="./img/courses-crossfit.jpg"
-              alt="cross-fit"
+              alt="cross fit course"
+              width="550"
+              height="550"
             />
             <div class="class-card__overlay">
               <div class="text">
@@ -149,7 +155,9 @@
             <img
               class="class-card__img"
               src="./img/courses-fitness.jpg"
-              alt="fitness"
+              alt="fitness course"
+              width="550"
+              height="550"
             />
             <div class="class-card__overlay">
               <div class="text">
@@ -167,17 +175,19 @@
       </section>
 
       <!-- SECTION OFFER -->
-      <section class="section-offer" id="about">
+      <section class="section-offer" id="offer">
         <div class="offer-box">
-          <div class="offer" data-aos="fade-up">
-            <div class="heading margin-bottom">
-              <h1 class="heading__secondary">
-                Special offer this summer get full Benefits for year with 20%
-                discount.
-              </h1>
-            </div>
+          <article class="offer" data-aos="fade-up">
+            <h2 class="margin-bottom">
+              Special offer this summer get full Benefits for year with 20%
+              discount.
+            </h2>
+            <p class="margin-bottom">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur exercitationem amet quas repellendus esse natus.
+            </p>
             <button class="btn btn__primary">Become a member</button>
-          </div>
+          </article>
 
           <div class="offer-img"></div>
         </div>
@@ -185,33 +195,56 @@
 
       <!-- SECTION COACHES -->
       <section class="section-coaches" id="trainers">
-        <div class="coaches-box section-container" data-aos="fade-up">
-          <div class="heading grid-center underline margin-bottom">
-            <div class="heading__secondary">OUR FITNESS COACHES</div>
-          </div>
-
-          <div class="sub-heading">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              aspernatur quisquam dolores quos dignissimos voluptates.
-            </p>
-          </div>
+        <div class="coaches-box container" data-aos="fade-up">
+          <h2 class="underline margin-bottom grid-center">
+            OUR FITNESS COACHES
+          </h2>
+          <h3 class="grid-center">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            aspernatur quisquam dolores quos dignissimos voluptates.
+          </h3>
 
           <div class="c-card">
-            <img src="img/coache-1.jpg" alt="coache-1" class="c-card__img" />
+            <img
+              src="img/coache-1.jpg"
+              alt="coache one"
+              class="c-card__img"
+              width="550"
+              height="550"
+            />
 
             <div class="overlay">
               <div class="social-icon">
-                <img src="./img/logo-whatsapp.svg" alt="whatsapp-icon" />
+                <img
+                  src="./img/logo-whatsapp.svg"
+                  alt="whatsapp-icon"
+                  width="35"
+                  height="35"
+                />
               </div>
               <div class="social-icon">
-                <img src="./img/logo-facebook.svg" alt="facebook-icon" />
+                <img
+                  src="./img/logo-facebook.svg"
+                  alt="facebook-icon"
+                  width="35"
+                  height="35"
+                />
               </div>
               <div class="social-icon">
-                <img src="./img/logo-instagram.svg" alt="instagram-icon" />
+                <img
+                  src="./img/logo-instagram.svg"
+                  alt="instagram-icon"
+                  width="35"
+                  height="35"
+                />
               </div>
               <div class="social-icon">
-                <img src="./img/logo-twitter.svg" alt="twitter-icon" />
+                <img
+                  src="./img/logo-twitter.svg"
+                  alt="twitter-icon"
+                  width="35"
+                  height="35"
+                />
               </div>
             </div>
 
@@ -222,20 +255,46 @@
           </div>
 
           <div class="c-card">
-            <img src="img/coache-2.jpg" alt="coache-1" class="c-card__img" />
+            <img
+              src="img/coache-2.jpg"
+              alt="coache two"
+              class="c-card__img"
+              width="550"
+              height="550"
+            />
 
             <div class="overlay">
               <div class="social-icon">
-                <img src="./img/logo-whatsapp.svg" alt="whatsapp-icon" />
+                <img
+                  src="./img/logo-whatsapp.svg"
+                  alt="whatsapp-icon"
+                  width="35"
+                  height="35"
+                />
               </div>
               <div class="social-icon">
-                <img src="./img/logo-facebook.svg" alt="facebook-icon" />
+                <img
+                  src="./img/logo-facebook.svg"
+                  alt="facebook-icon"
+                  width="35"
+                  height="35"
+                />
               </div>
               <div class="social-icon">
-                <img src="./img/logo-instagram.svg" alt="instagram-icon" />
+                <img
+                  src="./img/logo-instagram.svg"
+                  alt="instagram-icon"
+                  width="35"
+                  height="35"
+                />
               </div>
               <div class="social-icon">
-                <img src="./img/logo-twitter.svg" alt="twitter-icon" />
+                <img
+                  src="./img/logo-twitter.svg"
+                  alt="twitter-icon"
+                  width="35"
+                  height="35"
+                />
               </div>
             </div>
 
@@ -246,20 +305,46 @@
           </div>
 
           <div class="c-card">
-            <img src="img/coache-3.jpg" alt="coache-1" class="c-card__img" />
+            <img
+              src="img/coache-3.jpg"
+              alt="coache three"
+              class="c-card__img"
+              width="550"
+              height="550"
+            />
 
             <div class="overlay">
               <div class="social-icon">
-                <img src="./img/logo-whatsapp.svg" alt="whatsapp-icon" />
+                <img
+                  src="./img/logo-whatsapp.svg"
+                  alt="whatsapp-icon"
+                  width="35"
+                  height="35"
+                />
               </div>
               <div class="social-icon">
-                <img src="./img/logo-facebook.svg" alt="facebook-icon" />
+                <img
+                  src="./img/logo-facebook.svg"
+                  alt="facebook-icon"
+                  width="35"
+                  height="35"
+                />
               </div>
               <div class="social-icon">
-                <img src="./img/logo-instagram.svg" alt="instagram-icon" />
+                <img
+                  src="./img/logo-instagram.svg"
+                  alt="instagram-icon"
+                  width="35"
+                  height="35"
+                />
               </div>
               <div class="social-icon">
-                <img src="./img/logo-twitter.svg" alt="twitter-icon" />
+                <img
+                  src="./img/logo-twitter.svg"
+                  alt="twitter-icon"
+                  width="35"
+                  height="35"
+                />
               </div>
             </div>
 
@@ -273,22 +358,23 @@
 
       <!-- SECTION REVIEW -->
       <section class="section-review" id="review">
-        <div class="review-box section-container" data-aos="fade-up">
-          <div class="heading grid-center underline margin-bottom">
-            <h1 class="heading__secondary">what people say</h1>
-          </div>
+        <div class="review-box container" data-aos="fade-up">
+          <h1 class="underline margin-bottom grid-center">what people say</h1>
 
           <div class="review-card">
             <img
               src="img/review-img-1.jpg"
               alt="user"
               class="review-card__image"
+              width="100"
+              height="100"
             />
             <blockquote class="review-card__content">
               <p class="text">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Sapiente possimus aperiam
               </p>
+
               <div class="name">Cesar Rincon</div>
             </blockquote>
           </div>
@@ -298,6 +384,8 @@
               src="img/review-img-2.jpg"
               alt="user"
               class="review-card__image"
+              width="100"
+              height="100"
             />
             <blockquote class="review-card__content">
               <p class="text">
@@ -314,11 +402,10 @@
       <section class="section-contact" id="contact">
         <div class="contact-box">
           <form class="form-grp" data-aos="fade-up">
-            <div class="heading margin-bottom">
-              <h1 class="heading__secondary">
-                Get in <span class="yellow">Touch</span>
-              </h1>
-            </div>
+            <h2 class="margin-bottom">
+              Get in <span class="yellow">Touch</span>
+            </h2>
+
             <input type="text" class="form form__input" placeholder="Name" />
             <input type="text" class="form form__input" placeholder="Email" />
             <input type="text" class="form form__input" placeholder="Phone" />
@@ -334,77 +421,93 @@
           <div id="mapid" data-aos="fade-up"></div>
         </div>
       </section>
+    </main>
 
-      <!-- FOOTER -->
-      <footer class="section-footer" id="footer">
-        <div class="footer-box section-container">
-          <div class="contact-details">
-            <div class="heading margin-bottom">
-              <h1 class="heading__secondary">
-                <span class="yellow">M</span>Fitness
-              </h1>
-            </div>
+    <!-- FOOTER -->
+    <footer class="section-footer" id="footer">
+      <div class="footer-box container">
+        <div class="contact-details">
+          <h2 class="margin-bottom"><span class="yellow">M</span>Fitness</h2>
 
-            <ul class="contact-data">
-              <li class="location">100 Nallin Street, New Youk</li>
-              <li class="phone">+00 000 000 00</li>
-              <li class="email">MFitness@domine.com</li>
-              <li class="social">
-                <div class="social-icon">
-                  <img src="./img/logo-whatsapp.svg" alt="whatsapp-icon" />
-                </div>
-                <div class="social-icon">
-                  <img src="./img/logo-facebook.svg" alt="facebook-icon" />
-                </div>
-                <div class="social-icon">
-                  <img src="./img/logo-instagram.svg" alt="instagram-icon" />
-                </div>
-                <div class="social-icon">
-                  <img src="./img/logo-twitter.svg" alt="twitter-icon" />
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <nav class="footer-nav" aria-label="navigation">
-            <div class="nav-name">Quick Links</div>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#courses">Courses</a></li>
-              <li><a href="#trainers">Trainers</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-
-          <div class="newsletter">
-            <div class="newsletter__title">News Letter</div>
-            <div class="newsletter__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium, nisi!
-            </div>
-            <form class="newsletter__input">
-              <input
-                type="text"
-                class="form"
-                placeholder="example@domine.com"
+          <ul class="contact-data">
+            <li class="location">100 Nallin Street, New Youk</li>
+            <li class="phone">+00 000 000 00</li>
+            <li class="email">MFitness@domine.com</li>
+            <li class="social">
+              <img
+                src="./img/logo-whatsapp.svg"
+                alt="whatsapp icon"
+                width="35"
+                height="35"
               />
-              <img src="./img/send.svg" alt="send icon" class="send-icon" />
-            </form>
-          </div>
 
-          <div class="legel">
-            <p class="text">Copyright &copy; by Manoranjan&nbsp;</p>
-            <a
-              href="https://github.com/Manoranjan-D/responsive-website-gym"
-              target="_blank"
-            >
-              <img src="img/github.svg" alt="github" class="github" />
-            </a>
-          </div>
+              <img
+                src="./img/logo-facebook.svg"
+                alt="facebook icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-instagram.svg"
+                alt="instagram icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-twitter.svg"
+                alt="twitter icon"
+                width="35"
+                height="35"
+              />
+            </li>
+          </ul>
         </div>
-      </footer>
-    </div>
+
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Quick Links</div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="newsletter">
+          <div class="newsletter__title">News Letter</div>
+          <div class="newsletter__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            nisi!
+          </div>
+          <form class="newsletter__input">
+            <input type="text" class="form" placeholder="example@domine.com" />
+            <img
+              src="./img/send.svg"
+              alt="send icon"
+              class="send-icon"
+              width="35"
+              height="35"
+            />
+          </form>
+        </div>
+
+        <div class="legel">
+          <p class="text">Copyright &copy; by Manoranjan&nbsp;</p>
+          <a href="https://github.com/Manoranjan-D/responsive-website-gym">
+            <img
+              src="img/github.svg"
+              alt="github"
+              class="github"
+              width="35"
+              height="35"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
 
     <script src="./index.js"></script>
   </body>

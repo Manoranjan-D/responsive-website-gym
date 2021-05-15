@@ -1,31 +1,14 @@
-.heading {
-  font-size: clamp(2.5rem, 4vw, 5rem);
-  color: #fff;
+h1 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
   text-transform: uppercase;
-
-  &__primary {
-    font-size: 100%;
-    font-weight: 900;
-  }
-
-  &__secondary {
-    font-size: unquote($string: 'max(2.2rem, 70%)');
-    font-weight: 700;
-  }
-
-  &__tertiary {
-    font-size: unquote($string: 'max(1.8rem, 50%)');
-    text-transform: capitalize;
-  }
-
-  &--black {
-    color: #000;
-  }
 }
 
-.sub-heading {
-  grid-column: 1/-1;
-  text-align: center;
-  margin-top: -4rem;
-  font-size: 1.7rem;
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 400;
+  margin-top: -2rem;
 }
