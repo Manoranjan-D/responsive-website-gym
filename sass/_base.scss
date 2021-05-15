@@ -58,6 +58,7 @@ body {
   max-width: clamp(50rem, 85vw, 114rem);
   padding: clamp(4rem, 10vw, 12rem) 2.4rem;
   margin: 0 auto;
+  min-width: 25rem;
 }
 
 section:nth-child(odd) {
