@@ -1,17 +1,11 @@
 .header {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-    url('../img/header-bg-img.jpg');
-  background-size: cover;
-  background-position: top;
-  height: unquote($string: 'max(100vh, 60rem)');
-}
-
-.header-box {
-  display: flex;
-  flex-direction: column;
-
-  height: 100%;
-  padding: 0 2.4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  width: 100%;
+  z-index: 100;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
 }
 
 .header-navigation {
@@ -19,25 +13,25 @@
   justify-content: space-between;
   align-items: center;
 
-  font-size: 1.7rem;
-  padding: 2rem 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.1)
-  );
+  padding: 1.2rem 0;
 
   & ul {
-    display: var(--display-nav);
+    display: flex;
     text-transform: capitalize;
+    font-size: 1.7rem;
+    list-style: none;
+    font-weight: 700;
+
+    @media only screen and (max-width: 50em) {
+      display: none;
+    }
 
     & li {
-      list-style: none;
-      padding-left: 2.5rem;
+      padding-left: 2.8rem;
       & a {
         text-decoration: none;
         color: #fff;
-        padding: 1rem 0;
+        padding: 1.8rem 0;
         border-bottom: 2px solid transparent;
         transition: border 0.5s;
 
@@ -47,36 +41,18 @@
       }
     }
   }
-}
 
-.logo {
-  font-size: 2.5rem;
-  font-weight: 700;
-  align-self: flex-start;
-}
+  & .logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
 
-.nav-icon {
-  display: var(--display-mob-nav);
-  align-self: flex-end;
+  & .nav-icon {
+    display: none;
+    border: 1px solid #fff;
 
-  overflow: hidden;
-  border: 1px solid #fff;
-  padding: 0.1rem;
-}
-
-.header-content {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.1)
-  );
-
-  padding: 2rem 0rem;
-  margin: auto 0;
-  transform: translateY(-20%);
-
-  & .description {
-    font-size: 1.8rem;
-    line-break: strict;
+    @media only screen and (max-width: 50em) {
+      display: block;
+    }
   }
 }

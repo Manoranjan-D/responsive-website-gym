@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="MFitness reponsive webite build using HTML5, CSS3 and Javascript The complete layout of the page is build using grid layout and flexbox with some cool animations. And also considering all the metrics to improve performance, SEO and best practices"
+      content="MFitness reponsive webite build using HTML5, CSS3 and Javascript The complete layout of the page is build using grid layout and flexbox with some cool animations."
     />
     <title>MFitness - place for your fitness goals</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
@@ -16,7 +16,7 @@
   <body>
     <!-- HEADER -->
     <header class="header" id="home">
-      <div class="header-box container">
+      <div class="container">
         <nav class="header-navigation" aria-label="navigation">
           <div class="logo"><span class="yellow">M</span>Fitness</div>
 
@@ -24,8 +24,8 @@
             src="img/nav-icon.svg"
             alt="navigation icon"
             class="nav-icon"
-            width="35"
-            height="35"
+            width="30"
+            height="30"
           />
 
           <ul>
@@ -46,11 +46,17 @@
             </li>
           </ul>
         </nav>
+      </div>
+    </header>
 
-        <article class="header-content">
-          <div class="heading margin-bottom">
-            <h1><span class="yellow">M</span>Fitness</h1>
-            <h2 class="margin-bottom">A place for your fitness goals</h2>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="section-hero">
+        <div class="container hero-box">
+          <div class="hero-content margin-bottom">
+            <h1 class="heading heading--1 margin-bottom">
+              A place for your fitness goals
+            </h1>
             <p class="description">
               We Offer Functional Training, Plyometric Boxes, Aerobics classes,
               TRX And Much More
@@ -62,16 +68,16 @@
             </button>
             <button class="btn btn__secondary">Our services</button>
           </div>
-        </article>
-      </div>
-    </header>
+        </div>
+      </section>
 
-    <main>
       <!-- SECTION ABOUT -->
       <section class="section-about" id="about">
         <div class="about-box container">
           <div class="about-box__content" data-aos="fade-up">
-            <h2>About <span class="yellow">M</span>Fitness</h2>
+            <h2 class="heading heading--2">
+              About <span class="yellow">M</span>Fitness
+            </h2>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
               dolor perferendis repellat ipsam fugiat dolorum possimus, modi ut
@@ -105,9 +111,14 @@
 
       <!-- SECTION COURSES -->
       <section class="section-courses" id="courses">
-        <div class="container" data-aos="fade-up">
+        <div class="container courses-box" data-aos="fade-up">
           <header class="courses-heading">
-            <h2 class="underline">Our Courses</h2>
+            <h2 class="heading heading--2 underline">Our Courses</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
+              ducimus illum corporis magni voluptas, ex eum dolorum quia
+              officia! Deleniti quia ut.
+            </p>
           </header>
 
           <article class="courses-content">
@@ -198,6 +209,48 @@
               </div>
               <div class="class-card__title">Fitness</div>
             </div>
+
+            <div class="class-card">
+              <img
+                class="class-card__img"
+                src="./img/courses-TRX.jpg"
+                alt="fitness course"
+                width="550"
+                height="550"
+              />
+              <div class="class-card__overlay">
+                <div class="text">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ratione culpa
+                  </p>
+
+                  <a href="#" class="link-button">Read More &rarr;</a>
+                </div>
+              </div>
+              <div class="class-card__title">TRX</div>
+            </div>
+
+            <div class="class-card">
+              <img
+                class="class-card__img"
+                src="./img/courses-boxing.jpg"
+                alt="fitness course"
+                width="550"
+                height="550"
+              />
+              <div class="class-card__overlay">
+                <div class="text">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ratione culpa
+                  </p>
+
+                  <a href="#" class="link-button">Read More &rarr;</a>
+                </div>
+              </div>
+              <div class="class-card__title">Boxing</div>
+            </div>
           </article>
         </div>
       </section>
@@ -206,7 +259,7 @@
       <section class="section-offer" id="offer">
         <div class="offer-box">
           <div class="offer" data-aos="fade-up">
-            <h2 class="margin-bottom">
+            <h2 class="heading heading--2 margin-bottom">
               Special offer this summer get full Benefits for year with 20%
               discount.
             </h2>
@@ -223,9 +276,16 @@
 
       <!-- SECTION COACHES -->
       <section class="section-coaches" id="trainers">
-        <div class="container" data-aos="fade-up">
+        <div class="container coaches-box" data-aos="fade-up">
           <header class="coache-heading">
-            <h2 class="underline">OUR FITNESS COACHES</h2>
+            <h2 class="heading heading--2 underline margin-bottom">
+              OUR FITNESS COACHES
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
+              ducimus illum corporis magni voluptas, ex eum dolorum quia
+              officia! Deleniti quia ut.
+            </p>
           </header>
 
           <article class="coache-content">
@@ -276,51 +336,6 @@
 
             <div class="c-card">
               <img
-                src="img/coache-4.jpg"
-                alt="coache two"
-                class="c-card__img"
-                width="550"
-                height="550"
-              />
-
-              <div class="overlay">
-                <img
-                  src="./img/logo-whatsapp.svg"
-                  alt="whatsapp-icon"
-                  width="30"
-                  height="30"
-                />
-
-                <img
-                  src="./img/logo-facebook.svg"
-                  alt="facebook-icon"
-                  width="30"
-                  height="30"
-                />
-
-                <img
-                  src="./img/logo-instagram.svg"
-                  alt="instagram-icon"
-                  width="30"
-                  height="30"
-                />
-
-                <img
-                  src="./img/logo-twitter.svg"
-                  alt="twitter-icon"
-                  width="30"
-                  height="30"
-                />
-              </div>
-
-              <div class="c-card__content">
-                <p class="c-name">CATHY PHAM</p>
-                <p class="c-title">Cardio Expert</p>
-              </div>
-            </div>
-
-            <div class="c-card">
-              <img
                 src="img/coache-2.jpg"
                 alt="coache one"
                 class="c-card__img"
@@ -360,7 +375,7 @@
 
               <div class="c-card__content">
                 <p class="c-name">serio mike</p>
-                <p class="c-title">Fitness Coach</p>
+                <p class="c-title">Cardio Expert</p>
               </div>
             </div>
 
@@ -414,7 +429,9 @@
       <!-- SECTION REVIEW -->
       <section class="section-review" id="review">
         <div class="review-box container" data-aos="fade-up">
-          <h2 class="underline margin-bottom grid-center">what people say</h2>
+          <h2 class="heading heading--2 underline margin-bottom grid-center">
+            what people say
+          </h2>
 
           <div class="review-card">
             <img
@@ -457,7 +474,7 @@
       <section class="section-contact" id="contact">
         <div class="contact-box">
           <form class="form-grp" data-aos="fade-up">
-            <h2 class="margin-bottom">
+            <h2 class="heading heading--2 margin-bottom">
               Get in <span class="yellow">Touch</span>
             </h2>
 

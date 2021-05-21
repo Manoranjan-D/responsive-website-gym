@@ -1,7 +1,15 @@
+.section-about {
+  padding: clamp(4rem, 10vw, 12rem) 0rem;
+}
+
 .about-box {
   display: grid;
-  grid-template-columns: repeat(var(--section-col-2), minmax(min-content, 1fr));
+  grid-template-columns: repeat(
+    var(--two-col-layout),
+    minmax(min-content, 1fr)
+  );
   align-items: flex-start;
+
   column-gap: var(--grid-column-gap);
   row-gap: var(--grid-row-gap);
 

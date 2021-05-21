@@ -1,33 +1,32 @@
 :root {
   //COLOR YELLOW
-  --color-yellow: #feee0b;
-  --color-yellow-dark: #a29801;
+  --color-yellow: hsl(56, 99%, 52%);
+  --color-yellow-dark: hsl(56, 99%, 32%);
   --color-yellow-light: hsl(56, 99%, 82%);
 
   //BLACK COLOR
-  --color-black: #151515;
-  --color-black-light: #2b2b2b;
+  --color-black: hsl(0, 0%, 15%);
+  --color-black-light: hsl(0, 0%, 22%);
 
   //RED COLOR
-  --color-red: #e5383b;
+  --color-red: hsl(359, 77%, 56%);
 
   //GRID GAP
   --grid-column-gap: clamp(2rem, 6vw, 8rem);
   --grid-row-gap: 4rem;
 
-  //NAVIGATION
-  --display-nav: flex;
-  --display-mob-nav: none;
-
-  @media only screen and (max-width: 43.75em) {
-    --display-nav: none;
-    --display-mob-nav: block;
-  }
-
   //GRID
-  --section-col-2: 2;
-  @media only screen and (max-width: 900px) {
-    --section-col-2: 1;
+  --two-col-layout: 2;
+  --three-col-layout: 3;
+
+  @media only screen and (max-width: 56.25em) {
+    --two-col-layout: 1;
+  }
+  @media only screen and (max-width: 59em) {
+    --three-col-layout: 2;
+  }
+  @media only screen and (max-width: 37.5em) {
+    --three-col-layout: 1;
   }
 }
 
@@ -41,7 +40,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 62.5%; //1rem = 10px
   scroll-behavior: smooth;
 }
 
@@ -56,9 +55,8 @@ body {
 
 .container {
   max-width: clamp(50rem, 85vw, 114rem);
-  padding: clamp(4rem, 10vw, 12rem) 2.4rem;
+  padding: 0 2.4rem;
   margin: 0 auto;
-  min-width: 25rem;
 }
 
 section:nth-child(odd) {

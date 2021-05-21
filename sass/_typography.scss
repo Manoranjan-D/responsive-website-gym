@@ -1,9 +1,12 @@
-h1 {
-  font-size: clamp(2.5rem, 4vw, 4rem);
+.heading {
+  font-weight: 700;
   text-transform: uppercase;
-}
 
-h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  text-transform: uppercase;
+  &--1 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+  }
+
+  &--2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
 }

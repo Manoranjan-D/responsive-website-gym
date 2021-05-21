@@ -1,0 +1,20 @@
+.section-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url('../img/header-bg-img.jpg');
+  background-size: cover;
+  background-position: top;
+  height: unquote($string: 'max(100vh, 60rem)');
+}
+
+.hero-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  letter-spacing: 0.1rem;
+
+  & .description {
+    font-size: 1.7rem;
+  }
+}
